@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CalkTest</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="first-section">
+        <div class="conteiner">
+            <div class="first-section__flex">
+                <div class="first-section__conteinerInput">
+                    <p class="first-section__text1">Storage: </p>
+                    <output for="myRange" id="volume">0</output>
+                </div>
+                <p class="first-section__text3">GB</p>
+                <div class="first-section__conteinerInput1">
+                    <p class="first-section__text1">Transfer:</p>
+                    <output for="myRange1" id="volum">0</output>
+                </div>
+
+                <p class="first-section__text3333">GB</p>
+
+            </div>
+            <div class="first-section__flex2">
+                <div class="slidecontainer">
+
+                    <input class="input12" type="range" min="0" max="1000" value="0" id="myRange" step="1" oninput="outputUpdate(value)">
+
+                </div>
+                <div class="slidecontainer1">
+                    <input class="input13" type="range" min="0" max="1000" value="0" id="myRange1" step="1" oninput="outputUpdate1(value)">
+
+                </div>
+
+            </div>
+            <div class="second-section">
+                <div class="second-section__flexbox">
+                    <p class="second-section__text200">backblaze</p>
+                    <button class="second-section__round ">
+        <p class="second-section__text21">icon</p>
+
+      </button>
+
+                </div>
+                <div class="second-section__flexbox1">
+                    <p class="second-section__text221">bunny</p>
+                    <button class="second-section__round1 ">
+        <p class="second-section__text21">icon</p>
+
+      </button>
+
+                </div>
+                <div class="second-section__flexbox20">
+                    <button id="btn" class="second-section__button20"  onclick="change_bunny_storage('hdd')"></button>
+                    <p class="second-section__text23">HDD</p>
+                    <button id="btn1" class="second-section__button20" onclick="change_bunny_storage('ssd')"></button>
+                    <p class="second-section__text23">SSD</p>
+
+
+                </div>
+                <div class="second-section__flexbox1">
+                    <p class="second-section__text222">scaleway</p>
+                    <button class="second-section__round2 ">
+        <p class="second-section__text21">icon</p>
+
+      </button>
+
+                </div>
+                <div class="second-section__flexbox21">
+                    <button id="btn" class="second-section__button20" onclick="change_scaleway_storage('multi')"></button>
+                    <p class="second-section__text23">Multi</p>
+                    <button id="btn" class="second-section__button20" onclick="change_scaleway_storage('single')"></button>
+                    <p class="second-section__text23">Single</p>
+
+
+                </div>
+                <div class="second-section__flexbox1">
+                    <p class="second-section__text223">vultr</p>
+                    <button class="second-section__round3 ">
+        <p class="second-section__text21">icon</p>
+
+      </button>
+
+
+                </div>
+
+                <div class="chart">
+                    <div class="bar1" style="width: 0;"></div>
+                    <div class="bar2" style="width: 0;"></div>
+                    <div class="bar3" style="width: 0;"></div>
+                    <div class="bar4" style="width: 0;"></div>
+                </div>
+                <p class="second-section__result1"></p>
+
+                <p class="second-section__result2">11</p>
+
+                <p class="second-section__result3">11</p>
+
+                <p class="second-section__result4">11</p>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script src="js/style.js"></script>
+</body>
+
+</html>
